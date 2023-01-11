@@ -25,6 +25,17 @@ window.onload = function(){
     document.body.style.fontSize = "40px";
   });
 
+  
+  // onmouseover and onmouseout event handlers : BUGFIX: WIP
+ const test = document.getElementById("test");
 
-  // onmouseover and onmouseout event handlers 
+  test.addEventListener("onmouseover", function(event)  {
+    event.target.style.color = "yellow";
+  });
+
+  test.addEventListener("onmouseout", function(event)  {
+    event.target.style.color = "";
+  });
+  
+
 }
