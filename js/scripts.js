@@ -1,17 +1,14 @@
-// User Interface Logic
-window.onload = () => {
-  let h1 = document.querySelector("h1");
-  h1.onmouseover = () => {
-    window.alert("I am a heading element.");
-  }
+window.onload = function(){
+  let buttonLight = document.querySelector("button.button-light")
+  buttonLight.addEventListener('click', function(){
+    document.body.style.backgroundColor = "white";
+    document.body.style.color = "black"
+  });
 
-  let p = document.querySelector("p");
-  p.onmouseover = () =>  {
-    document.querySelector("p>em").innerText = "Don't be surprised";
-  };
-
-  let img = document.querySelector("img");
-  img.onmouseover = () => {
-    img.style.height = "700px";
-  };
+  let buttonDark= document.querySelector("button.button-dark");
+  buttonDark.addEventListener('click', function(){
+    document.body.style.backgroundColor = "black";
+    document.body.style.color = "white"
+  });
+  
 }
